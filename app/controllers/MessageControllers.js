@@ -1,5 +1,5 @@
-const Message = require('../models/message')
-const { authenticateUser } = require('../middlewares/authentication')
+const Message = require('../model/Message')
+const authenticateUser = require('../middlewares/authentication')
 const express = require('express')
 const router = express.Router() 
 
