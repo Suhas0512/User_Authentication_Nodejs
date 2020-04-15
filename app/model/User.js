@@ -49,7 +49,7 @@ userSchema.statics.findByToken=function(token){
     try {
         tokenData=jwt.verify(token,'jwt@123')
     }
-    catch{
+    catch(err){
         return Promise.reject(err)
     }
 
